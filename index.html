@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--Template Made By Noah Bompard for Caramel S.A -->
+<html>
+
+<head>
+   
+
+    <title>bugdisplay</title>
+
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.js"></script>
+
+    <script type="text/javascript" src="classes/ScenePreload.js"></script>
+    <script type="text/javascript" src="classes/SceneCaramel.js"></script>
+    <!-- your next scenes here, before the main -->
+
+    <script type="text/javascript" src="classes/main.js"></script>
+    
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div align="center"></div>
+    <script>
+        var portrait = window.innerWidth < window.innerHeight;
+        var PleaseRotateOptions = {
+            startOnPageLoad: true,
+            onHide: function () { },
+            onShow: function () { },
+            forcePortrait: false,
+            message: "Please Rotate Your Device",
+            subMessage: "(you can also play on desktop)",
+            allowClickBypass: false,
+            onlyMobile: false,
+            zIndex: 1000,
+            iconNode: null
+        }
+    </script>
+    <script type="text/javascript" src="util/util/pleaserotate.js"></script>
+</body>
+<style>
+    * {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+</html>
